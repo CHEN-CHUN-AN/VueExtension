@@ -20,13 +20,13 @@ const restoreFromHistory = (item) => {
 <template>
   <div class="section-card">
     <div class="history-header">
-        <h2 class="section-title">📚 歷史記錄</h2>
+        <h2 class="section-title">歷史記錄</h2>
         <button
           @click="clearHistory"
           :disabled="history.length === 0"
           class="btn btn-sm btn-secondary"
         >
-          🗑️ 清空歷史
+          🗑️清空歷史抽獎紀錄
         </button>
     </div>
 
@@ -43,10 +43,10 @@ const restoreFromHistory = (item) => {
         >
           <div class="history-item-main">
             <div class="history-info">
-              <div class="history-time">⏰ {{ item.timestamp }}</div>
+              <div class="history-time"> {{ item.timestamp }}</div>
               <div class="history-details">
-                <span class="detail-tag">{{ item.mode === 'number' ? '🔢 數字' : '📝 名單' }}</span>
-                <span class="detail-tag">抽 {{ item.drawCount }} 項</span>
+                <span class="detail-tag">{{ item.mode === 'number' ? '數字模式抽出' : '名單模式抽出' }}</span>
+                <span class="detail-tag">抽出 {{ item.drawCount }} 位中獎名單</span>
               </div>
             </div>
 
@@ -64,7 +64,7 @@ const restoreFromHistory = (item) => {
             @click="restoreFromHistory(item)"
             class="btn btn-sm btn-green-secondary"
           >
-            ↩️ 恢復
+            ↩️ 恢復至名單中
           </button>
         </div>
       </div>

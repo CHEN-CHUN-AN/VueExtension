@@ -489,15 +489,15 @@ const groupParticipants = () => {
     <div class="main-container">
       <!-- 標題區域 -->
       <div class="header">
-        <h1 class="title">🎲 超級抽獎助手</h1>
-        <p class="subtitle">讓每次抽獎都充滿驚喜！</p>
+        <h1 class="title">抽獎小幫手</h1>
+        <p class="subtitle">簡簡單單方方便便就抽獎！</p>
       </div>
 
       <!-- 主要內容區域 -->
       <div class="content-area">
         <!-- 抽獎設定區域 -->
         <div class="section-card">
-          <h2 class="section-title">🎯 抽獎設定</h2>
+          <h2 class="section-title">抽獎設定</h2>
           <DrawSettings
             v-model:mode="mode"
             v-model:totalStudents="totalStudents"
@@ -513,7 +513,7 @@ const groupParticipants = () => {
 
         <!-- 抽獎控制與結果 -->
         <div class="section-card">
-          <h2 class="section-title">🚀 執行抽獎</h2>
+          <h2 class="section-title">執行抽獎</h2>
           <DrawExecution
             v-model:drawCount="drawCount"
             :current-list="currentList"

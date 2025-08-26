@@ -22,7 +22,7 @@ const emit = defineEmits([
     <!-- List Header -->
     <div class="list-header">
       <h3 class="list-title">
-        📋 當前名單 ({{ currentList.length }} 人)
+        當前名單 ({{ currentList.length }} 人)
       </h3>
       <div class="list-header-buttons">
         <button @click="emit('toggle-list-visibility')" class="btn btn-sm btn-secondary">
@@ -61,7 +61,7 @@ const emit = defineEmits([
 
     <!-- Grouping Section -->
     <div class="group-section">
-        <h3 class="list-title">👥 名單分組</h3>
+        <h3 class="list-title">名單分組</h3>
         <div class="group-controls">
           <label for="group-count-input" class="group-label">分成</label>
           <input
