@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "超級抽獎助手",
+  "version": "1.0.0",
+  "description": "一個功能強大的抽獎Chrome擴展，支持數字模式和名單模式",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "超級抽獎助手"
+  },
+  "icons": {
+    "16": "favicon.ico",
+    "48": "favicon.ico",
+    "128": "favicon.ico"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
+
